@@ -30,11 +30,14 @@ Basic Choose Folder: Get-ChooseFileName
 	That will give you a dialog that lets you choose a single folder  
 ## EXAMPLE
 Choose Folder with custom prompt:  
-		Get-ChooseFileName -chooseFileNamePrompt "My Custom Prompt"  
+
+	Get-ChooseFileName -chooseFileNamePrompt "My Custom Prompt"  
 
 ## EXAMPLE
 Choose file name starting in a specified folder:  
-		Get-ChooseFolder -defaultLocation "Some unix path"  
+
+	Get-ChooseFolder -defaultLocation "/Some/unix/path"  
+
 Note that with the default location parameter, you shouldn't have to escape spaces, single quotes etc. Since this is expecting double quotes around the string, if you use a double quote in the file path, you'd have to escape it. HOWEVER, this is WHERE IT GETS WEIRD, because you have to combine unix AND PowerShell escaping.  
 
 For Example, say the path you want to pass is: /Users/username/Pictures/Bill"s amazing pictures - to get that to work, you'd have to enter: "/Users/username/Pictures/Bill\`"s amazing pictures" because that will allow PowerShell to escape the double quote and pass the string: "/Users/username/Pictures/Bill\"s amazing pictures" to the unix command  
@@ -45,5 +48,7 @@ ALSO IMPORTANT: avoid ~. It doesn't work. There's probably some escape magic tha
 
 ## EXAMPLE  
 Choose file name with a default file name:  
+
 	Get-ChooseFolder -defaultFileName "some file name"  
+ 
 This is something you'd probably only use in a script you're building for someone else to run. Like you still have to type the filename anyway. But it's an option in the command, so it's in here too  
