@@ -51,11 +51,11 @@ function Get-ChooseFileName {
 	.EXAMPLE
 	Choose file name with a default file name:
 
-		Get-ChooseFileName -defaultFileName "some file name" 
+		Get-ChooseFileName -defaultFileName "some file name"
 
 	This is something you'd probably only use in a script you're building for someone else to run. Like you still have to type the filename anyway. But it's an option in the command, so it's in here too
 
-	
+
 
 	.LINK
 	https://github.com/johncwelch/Get-PSChooseFileName
@@ -78,7 +78,7 @@ function Get-ChooseFileName {
 		Write-Output "This module only runs on macOS, exiting"
 		Exit
 	}
-	
+
 	$chooseFileNameCommand = "choose file name "
 
 	#prompt processing
@@ -102,7 +102,7 @@ function Get-ChooseFileName {
 	##run the command
 	#since we have to get this path back as a unix filepath, we splice in an posix path statement
 	$chooseFileNameCommand = "POSIX path of ($chooseFileNameCommand)"
-	
+
 	#now we run the command
 	$chooseFileNameString = $chooseFileNameCommand|/usr/bin/osascript -so
 
@@ -120,11 +120,13 @@ Export-ModuleMember -Function Get-ChooseFileName
 
 
 
+
+
 # SIG # Begin signature block
 # MIIMgAYJKoZIhvcNAQcCoIIMcTCCDG0CAQMxDTALBglghkgBZQMEAgEwewYKKwYB
 # BAGCNwIBBKBtBGswaTA0BgorBgEEAYI3AgEeMCYCAwEAAAQQH8w7YFlLCE63JNLG
-# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCC22RqTGpAXJ8s7
-# apAqbr10Sdc/FQw8E2S+Ga5HD0TOtqCCCaswggQEMIIC7KADAgECAggYeqmowpYh
+# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCDbBesoJU+paRty
+# /tbzU9NbexE3i8wuHxWbcnFWy8UPBqCCCaswggQEMIIC7KADAgECAggYeqmowpYh
 # DDANBgkqhkiG9w0BAQsFADBiMQswCQYDVQQGEwJVUzETMBEGA1UEChMKQXBwbGUg
 # SW5jLjEmMCQGA1UECxMdQXBwbGUgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkxFjAU
 # BgNVBAMTDUFwcGxlIFJvb3QgQ0EwHhcNMTIwMjAxMjIxMjE1WhcNMjcwMjAxMjIx
@@ -181,11 +183,11 @@ Export-ModuleMember -Function Get-ChooseFileName
 # b24gQXV0aG9yaXR5MRMwEQYDVQQKDApBcHBsZSBJbmMuMQswCQYDVQQGEwJVUwII
 # Bh5mm1/XjiowCwYJYIZIAWUDBAIBoHwwEAYKKwYBBAGCNwIBDDECMAAwGQYJKoZI
 # hvcNAQkDMQwGCisGAQQBgjcCAQQwHAYKKwYBBAGCNwIBCzEOMAwGCisGAQQBgjcC
-# ARUwLwYJKoZIhvcNAQkEMSIEIElSukL9JB6VfQuXdVAIYvfQ9P7W74Nl1CvNj6/R
-# DxdbMAsGCSqGSIb3DQEBAQSCAQCN7S09gFE209sKPqJVPODlRPA84viUSGWyAOyK
-# hKUEeMY9BXLrifuytsXuRYlEI5kZMmzEzsoQp2dxGQop3mvtn/iCH2ym03UcvcC9
-# Z7/ZlPw95dPeK2Ncahwmaah7gl2GiY5WGB4xc9wHKo6vLo/2sk/CmTS0ImSiIcdh
-# Rom5QVkUXJDGMq2if/6q27eWDFc6aXMS4S7MS74I0tVdhUDXHC1FVZCMWsvFZGN4
-# gCCY3CwT93NP8+HN9raJE44j7v2T480fJe8INnPt92Aa8GMndllKCzzlEWF07Pkp
-# /PGgQLwEJTP5J9ebef3E9zwDEcKrJqU2/7DiaSkf+InUe5jS
+# ARUwLwYJKoZIhvcNAQkEMSIEIBKvLHxxC9qtbV3R4M17dqsbawU3G2ybalWa5r/B
+# cMlqMAsGCSqGSIb3DQEBAQSCAQA5wKNOOWWzxEzW4Qw/PB1Y926edPpHImHA2fPd
+# vFoHjolR98KvBKp/MJPOFi5ss4FDfSohU4zl+VV4JGs3QZsAIyhrPVh8vG/YPeKH
+# e4qldW++jATq4ZgAPi9Z0oL4XC06JVj9Gqd/9Zm28R1jEZli8QL+oEl/HLyiHzcd
+# ATyJ1izS/XCvR5tM7ZTA9b06QXj32xSibTd5zPhwjgqKY4sMBriw2iBCzNlUjPwT
+# JSyWX2G8HyLYm1TzOZUZmPiqvf4ScejzO99Alr2stWA6wezr8LOWacuhrO/0XVbM
+# gIeX2nWOQCJjp68QTr77LZDNddFrQc5ZezJN5V1YPuBIIqic
 # SIG # End signature block
