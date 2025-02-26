@@ -7,7 +7,7 @@
 #
 
 @{
-	RootModule = 'Get-ChooseFIleName.psm1'
+	RootModule = 'Get-ChooseFileName.psm1'
 	ModuleVersion = '1.0'
 	GUID = '0da5299b-73f7-4f69-9882-5ed997207df9'
 	Author = 'John C. Welch'
@@ -77,7 +77,7 @@
 		PSData = @{
     
 			# Tags applied to this module. These help with module discovery in online galleries.
-			Tags = @("macOS","Mac","choose_folder","AppleScript","AppleScript_Bridge")
+			Tags = @("macOS","Mac","choose_file_name","AppleScript","AppleScript_Bridge")
     
 			# A URL to the license for this module.
 			LicenseUri = 'https://github.com/johncwelch/Get-PSChooseFileName/blob/main/LICENSE'
@@ -112,11 +112,12 @@
 }
 
 
+
 # SIG # Begin signature block
 # MIIMgAYJKoZIhvcNAQcCoIIMcTCCDG0CAQMxDTALBglghkgBZQMEAgEwewYKKwYB
 # BAGCNwIBBKBtBGswaTA0BgorBgEEAYI3AgEeMCYCAwEAAAQQH8w7YFlLCE63JNLG
-# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCAfCzS4TQYzdKHn
-# dCQILiya1lCat+5fbUH/px4/GAyX0KCCCaswggQEMIIC7KADAgECAggYeqmowpYh
+# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCCHk/W20biY8fFE
+# //yJhVm3ZvXMaueHea/U0NWakKuHY6CCCaswggQEMIIC7KADAgECAggYeqmowpYh
 # DDANBgkqhkiG9w0BAQsFADBiMQswCQYDVQQGEwJVUzETMBEGA1UEChMKQXBwbGUg
 # SW5jLjEmMCQGA1UECxMdQXBwbGUgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkxFjAU
 # BgNVBAMTDUFwcGxlIFJvb3QgQ0EwHhcNMTIwMjAxMjIxMjE1WhcNMjcwMjAxMjIx
@@ -173,11 +174,11 @@
 # b24gQXV0aG9yaXR5MRMwEQYDVQQKDApBcHBsZSBJbmMuMQswCQYDVQQGEwJVUwII
 # Bh5mm1/XjiowCwYJYIZIAWUDBAIBoHwwEAYKKwYBBAGCNwIBDDECMAAwGQYJKoZI
 # hvcNAQkDMQwGCisGAQQBgjcCAQQwHAYKKwYBBAGCNwIBCzEOMAwGCisGAQQBgjcC
-# ARUwLwYJKoZIhvcNAQkEMSIEIIaOAw8w9UUySeASW93ujINIBTif+xvBkcdPtvCv
-# ZHN7MAsGCSqGSIb3DQEBAQSCAQAamfeNywVyXN4eZgbSBD2xbAEqAihCHYSVRxv7
-# CgBSScM5wXu7yJBe5HRHVk6CsBPN/PzZHNhucG2SdOIaGaqqTEfvckfNh/StNm7w
-# 3JYJg5bfFCo+CK80Yn36vlLD5MUOYMIE++L6wMpJ+z3Rk62qV+dQphLPdxU2N3ps
-# 58lbOmq6jRl+amfz4y4/VYVw5LEsofyvLEo3ftCN8BoAkYZ7mQvYb2rEVn9NqBLo
-# 7gARD/c3gCSPMIm9QdsWiI4oQ/L1VpkXPVPWXnVh3ICZPy8BgTCe79/ApV4ONJno
-# DhIW5OgnHPDT+IAT0eErtaqwi4kDeIl41uC15gCHtHjVvsTv
+# ARUwLwYJKoZIhvcNAQkEMSIEIPIgEtIE9po5l2fam4qPVC4QzqjDoUmai/3tVbI5
+# ilgKMAsGCSqGSIb3DQEBAQSCAQDCM9ZNfVLHbjSIavLmWVMNspZgg6isKB94P9Q9
+# sGKlD955gSxOX/nqiJsrqKfOAeKbItEOOxqJBTdgLN8+MOxvPXbqZmTM3ddMTc1R
+# Nxm3SVEAv9JtXedAd1rdb+1jjqv3J7YWNglbPOReVxy0o5wG6nksYf9hbq4Pg/Ul
+# +4F6NyrWbAP/qzPhp51foapv1fRspbXV68u6odMRJuv73Z4cXz89OX74o0Hxu5BH
+# O+Bh1KCXp43R8GTFB3q5cPmDbMOuHuJhxrdgSRaUixCAqFiPWFBFcF+6cJ5faRh2
+# 48qPJ2hcO4Z6J7fL9ouU6xxZIvkGEitoLYBlHlX1YR+KNySb
 # SIG # End signature block
