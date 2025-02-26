@@ -52,7 +52,7 @@ function Get-ChooseFileName {
 	Choose file name with a default file name:
 
 		Get-ChooseFileName -defaultFileName "some file name" 
-		
+
 	This is something you'd probably only use in a script you're building for someone else to run. Like you still have to type the filename anyway. But it's an option in the command, so it's in here too
 
 	
@@ -119,11 +119,12 @@ function Get-ChooseFileName {
 Export-ModuleMember -Function Get-ChooseFileName
 
 
+
 # SIG # Begin signature block
 # MIIMgAYJKoZIhvcNAQcCoIIMcTCCDG0CAQMxDTALBglghkgBZQMEAgEwewYKKwYB
 # BAGCNwIBBKBtBGswaTA0BgorBgEEAYI3AgEeMCYCAwEAAAQQH8w7YFlLCE63JNLG
-# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCA9rCUObrZDNnPE
-# 9J+ezjWPiyyGFS1VAt5mh+jooPshD6CCCaswggQEMIIC7KADAgECAggYeqmowpYh
+# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCC22RqTGpAXJ8s7
+# apAqbr10Sdc/FQw8E2S+Ga5HD0TOtqCCCaswggQEMIIC7KADAgECAggYeqmowpYh
 # DDANBgkqhkiG9w0BAQsFADBiMQswCQYDVQQGEwJVUzETMBEGA1UEChMKQXBwbGUg
 # SW5jLjEmMCQGA1UECxMdQXBwbGUgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkxFjAU
 # BgNVBAMTDUFwcGxlIFJvb3QgQ0EwHhcNMTIwMjAxMjIxMjE1WhcNMjcwMjAxMjIx
@@ -180,11 +181,11 @@ Export-ModuleMember -Function Get-ChooseFileName
 # b24gQXV0aG9yaXR5MRMwEQYDVQQKDApBcHBsZSBJbmMuMQswCQYDVQQGEwJVUwII
 # Bh5mm1/XjiowCwYJYIZIAWUDBAIBoHwwEAYKKwYBBAGCNwIBDDECMAAwGQYJKoZI
 # hvcNAQkDMQwGCisGAQQBgjcCAQQwHAYKKwYBBAGCNwIBCzEOMAwGCisGAQQBgjcC
-# ARUwLwYJKoZIhvcNAQkEMSIEID5M2wXEdz4U0GORBjdRoikp/XNsxyyV75AG+Y7c
-# qWrsMAsGCSqGSIb3DQEBAQSCAQDACPYBRGriUXwlCsSZHSNKWRH8jNUSQEm7bzVA
-# wl4cp+qoWOBeNgC8FwTRyp2XmSJvRdLlLFELH6YxQt7ZZipoi+DpAU+eolaGC/Ns
-# d6iiiR4DiM/cQeGRwUvwZpRGdW1VzsxS3/+2m8LGSogCPfVv8NdLhBlfBnKV+SUK
-# v8a54DzitA3wun91KPT+W/GUE0/gcTSsiP/hphv46ouKVlU3ot8updZyB0AwDArD
-# U2Npwr7p6892wS7L/WSYEYWkW1UfwO++QF8Rp1hjKYbKhNWWg4TynM88iECyTJ1g
-# UDAs8psyRkUrrm3F8Ta15siwQUW6Ki32TrbS355dwWZ3eAvL
+# ARUwLwYJKoZIhvcNAQkEMSIEIElSukL9JB6VfQuXdVAIYvfQ9P7W74Nl1CvNj6/R
+# DxdbMAsGCSqGSIb3DQEBAQSCAQCN7S09gFE209sKPqJVPODlRPA84viUSGWyAOyK
+# hKUEeMY9BXLrifuytsXuRYlEI5kZMmzEzsoQp2dxGQop3mvtn/iCH2ym03UcvcC9
+# Z7/ZlPw95dPeK2Ncahwmaah7gl2GiY5WGB4xc9wHKo6vLo/2sk/CmTS0ImSiIcdh
+# Rom5QVkUXJDGMq2if/6q27eWDFc6aXMS4S7MS74I0tVdhUDXHC1FVZCMWsvFZGN4
+# gCCY3CwT93NP8+HN9raJE44j7v2T480fJe8INnPt92Aa8GMndllKCzzlEWF07Pkp
+# /PGgQLwEJTP5J9ebef3E9zwDEcKrJqU2/7DiaSkf+InUe5jS
 # SIG # End signature block
