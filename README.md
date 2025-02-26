@@ -26,14 +26,20 @@ None, there's nothing you can pipe to this
 A string representing a POSIX path or a string reading userCancelError
 
 ## EXAMPLE
-Basic Choose Folder: Get-ChooseFileName  
-	That will give you a dialog that lets you choose a single folder  
-## EXAMPLE
+Basic Choose File Name:  
+
+	Get-ChooseFileName  
+
+That will give you a dialog that lets you choose a single folder  
+
+## EXAMPLE  
+
 Choose Folder with custom prompt:  
 
 	Get-ChooseFileName -chooseFileNamePrompt "My Custom Prompt"  
 
-## EXAMPLE
+## EXAMPLE  
+
 Choose file name starting in a specified folder:  
 
 	Get-ChooseFolder -defaultLocation "/Some/unix/path"  
@@ -47,6 +53,7 @@ Try to avoid this, but if you can't, then the order is "PowerShell escape the st
 ALSO IMPORTANT: avoid ~. It doesn't work. There's probably some escape magic that makes it work, but I'm too lazy to try to find it.  
 
 ## EXAMPLE  
+
 Choose file name with a default file name:  
 
 	Get-ChooseFolder -defaultFileName "some file name"  
